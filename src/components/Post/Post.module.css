@@ -1,0 +1,27 @@
+.post {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c"
+    "a d";
+  grid-template-columns: minmax(40px, auto) 1fr;
+  gap: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.post [class*="ant-typography"] {
+  margin: 0;
+}
+
+.index {
+  grid-area: a;
+  padding: 5px;
+}
+
+.link {
+  width: 20%;
+}
